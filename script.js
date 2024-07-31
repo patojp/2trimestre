@@ -7,7 +7,49 @@ const textoResultado = document.querySelector(".texto-resultado");
 const perguntas = [
     {
         enunciado: "Você acha agricultura importante para a economia?",
-        alternativas: [
+        alt:root{
+            --cor-fundo: #511b69 ;
+            --cor-principal: #5b306e ;
+            --cor-secundaria: #48427c; 
+            --cor-destaque: #a066e2;
+            --cor-texto: #f0f6f7;
+          
+          }
+          
+          body {
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          }
+          
+          .caixa-principal{
+            background-color: var(--cor-principal);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+          }
+          
+          h1{
+            color: var(--cor-destaque);
+          }
+          
+          button {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+            border: none;
+            border-radius: 15px;
+            padding: 15px;
+            transition: background-color 0.3s;
+          }
+          
+          button:hover{
+            background-color: var(--cor-destaque);
+            color: var(--cor-principal);
+          }ernativas: [
             {
                 texto: "sim",
                 afirmacao: "a agricultura é importante para a economia por ser uma dos principais formas de sustentaçãodo país com sua exportação de soja e outros plantios."
